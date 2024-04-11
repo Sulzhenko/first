@@ -1,0 +1,33 @@
+banana
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+class MyClass { constructor() { this.property = getRandomString(); } }
+34 + 42,16,6,55,76,22,9,41,72,28,95,19,87,73,0,87,47,25,59,68,37,67,54,91,83,85,12,68,71,43,31,27,23,34,65,15,54,83,5,14,68,27,59,0,1,16,54,95,62,40,97,36,89,69,19,40,35,47,97,94,10,7,56,31,44,24,6,20,93,62,38,72,28,2,4,64,46,52,96,98,97,19,47,80,73,54,47,82,7,77,61,26,64,9,89,13,76,70
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const capitalizeString = str => str.toUpperCase();
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+banana
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+false / true
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+apple * 73
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const multiply = (a, b) => a * b;
+false + apple
+console.log(getRandomString());
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
