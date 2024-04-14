@@ -1,0 +1,18 @@
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+grape
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+50 + true
+
+console.log(getRandomString());
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+grape * 38
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+function addNumbers(a, b) { return a + b; }
